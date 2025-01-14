@@ -44,15 +44,18 @@ Copy code
 from transformers import AutoTokenizer, AutoModelForCausalLM
 
 # Load the model and tokenizer
+```
 model_name = "IzzatilloAi/LlaMa-3.1-8B-Uz"
 tokenizer = AutoTokenizer.from_pretrained(model_name)
 model = AutoModelForCausalLM.from_pretrained(model_name, device_map="auto", load_in_4bit=True)
+
 
 # Generate text
 prompt = "O'zbekiston tarixi haqida ma'lumot bering."
 inputs = tokenizer(prompt, return_tensors="pt")
 outputs = model.generate(inputs["input_ids"], max_length=100)
 print(tokenizer.decode(outputs[0], skip_special_tokens=True))
+```
 🏋️‍♂️ Training Details
 Dataset
 Sources:
@@ -71,17 +74,3 @@ Transformers: Hugging Face library for model training and inference.
 BitsAndBytes: For 4-bit quantization.
 PEFT: Parameter-efficient fine-tuning.
 
-📜 License
-This project is licensed under the MIT License. See the LICENSE file for more information.
-
-🙏 Acknowledgments
-Meta AI: For providing the LLaMA base model.
-Hugging Face: For the transformers library and ecosystem.
-Uzbek AI Community: For contributing datasets and resources.
-🤝 Contributions
-Contributions are welcome! Feel free to open issues or submit pull requests to improve the model or this repository.
-
-🛠️ Future Work
-Further fine-tuning for domain-specific Uzbek tasks.
-Incorporating additional datasets for broader coverage.
-Exploring deployment options for production environments.
