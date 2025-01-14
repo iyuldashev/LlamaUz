@@ -19,18 +19,6 @@ This project contains the fine-tuned LLaMA-3.1-8B model for various Uzbek natura
 
 ---
 
-## 📦 Repository Contents
-
-- `README.md`: This file, explaining the project.
-- Model files and configurations:
-  - `config.json`
-  - `pytorch_model.bin` (or `model.safetensors`)
-  - `tokenizer.json`
-  - `tokenizer_config.json`
-- Training arguments and logs (if applicable).
-
----
-
 ## 📋 Usage
 
 You can load and use the model directly with the Hugging Face `transformers` library.
