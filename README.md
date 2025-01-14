@@ -1,3 +1,5 @@
+![image/png](https://cdn-uploads.huggingface.co/production/uploads/665548499ccb17d967f29a74/Dvp01TiCw7xgR8k7EVCDA.png)
+
 **Fine-tuned LLaMA-3.1-8B model for Uzbek language tasks**
 
 This project contains the fine-tuned LLaMA-3.1-8B model for various Uzbek natural language processing (NLP) tasks such as text generation, question answering, and summarization. The model has been trained on a diverse dataset of Uzbek text, including content from Wikipedia, news articles, and books.
