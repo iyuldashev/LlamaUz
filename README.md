@@ -58,7 +58,6 @@ Hardware: 2 x NVIDIA RTX 4090 GPU (24GB memory)
 Epochs: 1
 Batch Size: 16
 Learning Rate: 2e-5
-Precision: Mixed (FP16/4-bit)
 Tools Used
 Transformers: Hugging Face library for model training and inference.
 BitsAndBytes: For 4-bit quantization.
